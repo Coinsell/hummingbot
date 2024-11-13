@@ -292,4 +292,13 @@ class CoinstoreExchange(ExchangePyBase):
                     ),
                 )
             )
-        return trade_updates
+        return trade_updates    
+
+    async def _request_order_status(self, tracked_order: InFlightOrder) -> Optional[OrderUpdate]:
+        pass
+
+    async def _update_trading_fees(self):
+        pass
+
+    async def _user_stream_event_listener(self):
+        pass
